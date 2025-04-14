@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RBS Admission Form</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  </html>
+    <body>
+      <h1 id="title">RBS Admission Form</h1>
+        <p id="description">Please fill out this form with the required information</p>
+        <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+          <label for="name" id="name-label">Name<input id="name" name="name" type="text" required placeholder="  Enter your name" /></label>
+            <label for="number" id="number-label">Mobile Number<input id="number" name="number" type="number" required placeholder="  Enter your mob. number" min="0" max="9" /></label>
+          <label for="age">Age (years)<input id="age" name="age" type="number" min="3" max="16" required placeholder="  Enter your age" /></label>
+          <label for="email" id="email-label">Email (optional)<input id="email" name="email" type="email" placeholder="  Enter your email" required></input></label>
+          <label for="school-name">Name of the school you are currently studying in:<input id="school-name" name="school-name" type="text" required placeholder="  Enter your school name" /></label>
+          <label for="class-name">Class/Grade Applying For<select id="dropdown" name="class-name">
+            <option value="select class">  Select class</option>
+            <option value="nursery">Nursery</option>
+            <option value="lkg">LKG</option>
+            <option value="ukg">Ukg</option>
+            <option value="1st class">1st class</option>
+            <option value="2nd class">2nd class</option>
+            <option value="3rd class">3rd class</option>
+            <option value="4th class">4th class</option>
+            <option value="5th class">5th class</option>
+            <option value="6th class">6th class</option>
+            <option value="7th class">7th class</option>
+            <option value="8th class">8th class</option>
+            <option value="9th class">9th class</option>
+            <option value="10th class">10th class</option>
+            </select></label>
+            <label for="address">Address<input id="address" name="address" type="text" placeholder="  Enter your address"></input></label> 
+              <p>Would you recommend RBS School to your friends and family?</p>
+              <label class="inline"><input id="Definitely" name="referrer" type="radio" value="Definitely">Definitely</input></label>
+              <label class="inline"><input id="maybe" name="referrer" type="radio" value="May be">May be</input></label>
+              <label class="inline"><input id="not-sure" name="referrer" type="radio" value="Not sure">Not sure</input></label>
+              <p>What did you not like about RBS school?</p>
+              <label for="feedback"><input id="feedback" name="feedback" type="checkbox" required class="inline" value="study">Study</input></label>
+               <label for="feedback"><input id="feedback" name="feedback" type="checkbox" required class="inline" value="projector class">Projector visualization Classes</input></label>
+                <label for="feedback"><input id="feedback" name="feedback" type="checkbox" required class="inline" value="classroom activities">Classroom Activities</input></label>
+                 <label for="feedback"><input id="feedback" name="feedback" type="checkbox" required class="inline" value="campus facilities">Campus Facilities</input></label>
+                  <label for="feedback"><input id="feedback" name="feedback" type="checkbox" required class="inline" value="teachers">Teachers</input></label>
+                   <label for="feedback"><input id="feedback" name="feedback" type="checkbox" required class="inline" value="transport servicies">Transport Services</input></label>
+                    <label for="feedback"><input id="feedback" name="feedback" type="checkbox" required class="inline" value="none of the  above">None of the above</input></label>
+                    <label for="comments">Any comments or suggestions?<textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter your comment here..."></textarea></label>
+                     </label>
+      <input id="submit" type="submit" value="Submit" />
+        </fieldset>
+        </form>
+    </body>
+</html>
+
